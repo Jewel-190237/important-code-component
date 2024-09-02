@@ -1,38 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeControl = () => {
-    const [darkMode, setDarkMode] = useState(true);
-
-    useEffect(() => {
-        const theme = localStorage.getItem("theme")
-        if (theme === "dark") {
-            setDarkMode(true);
-        }
-    }, [])
+    // Set initial theme to light mode (darkMode = false)
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedTheme = localStorage.getItem("theme");
+        return savedTheme === "dark" ? true : false;
+    });
 
     useEffect(() => {
         if (darkMode) {
-            document.documentElement.classList.add('dark')
-            localStorage.setItem("theme", "dark")
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("theme", "light");
         }
-        else {
-            document.documentElement.classList.remove('dark')
-            localStorage.setItem("theme", "light")
-        }
-    }, [darkMode])
+    }, [darkMode]);
 
     return (
-        <div className=''>
-            {/* <FaMoon className='text-white ' />
-            <div className='flex items-center justify-start absolute bg-white dark:bg-medium w-8 h-8 rounded-full shadow-md transform transition-transform duration-300 ' style={darkMode ? { left: '2px' } : { right: '2px' }}>
-                <FaSun className='ml-auto text-yellow-400 text-2xl  p-1' />
-            </div> */}
+        <div>
             <label className="swap swap-rotate">
                 <input
                     type="checkbox"
                     className="theme-controller"
-                    // checked={theme === "dark"}
+                    checked={!darkMode}  // Ensure this reflects the light theme by default
                     onChange={() => setDarkMode(!darkMode)}
                 />
 
@@ -55,7 +46,5 @@ const ThemeControl = () => {
         </div>
     );
 };
-
-
 
 export default ThemeControl;
