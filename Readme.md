@@ -2,5 +2,5 @@
 * ShapeWithBorder output is 
   ![alt text](ShapeWithBorder.png.png)
   
-* Recessive Navbar 
+* Recessive Navbar Design
 ![alt text](Navbar.png.png)
