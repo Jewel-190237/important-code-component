@@ -12,4 +12,4 @@
 ![alt text](ThreeChangeSlider.png)
 
 * Team file contain a swipper slider 
-![alt text](image.png)
+![alt text](SwipperSliderImage.png)
