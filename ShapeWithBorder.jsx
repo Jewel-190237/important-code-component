@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ShapeWithBorder = props => {
+const ShapeWithBorder = () => {
     return (
         <div>
-            <div className='lato mt-10 flex justify-between'>
+            <div className='lato mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 <div className='border p-10 flex flex-col justify-center w-[30%] rounded-lg'>
                     <div className='mx-auto'>
                         <div className='border-[15px] border-[#FF38111A] rounded-full'>
