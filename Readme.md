@@ -8,6 +8,8 @@
 * Common Slider is a hero or banner section slider.Here use animated button also.
 ![alt text](CommonSlider.jsx)
 
-*ThreeChangeSlider slider show three slider on screen
+* ThreeChangeSlider slider show three slider on screen
 ![alt text](ThreeChangeSlider.png)
 
+* Team file contain a swipper slider 
+![alt text](image.png)
