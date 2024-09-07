@@ -4,6 +4,6 @@
   
 * Recessive Navbar Design.
 ![alt text](Navbar.png.png)
-* Common Slider is a hero or banner section slider.
+* Common Slider is a hero or banner section slider.Here use animated button also.
 ![alt text](CommonSlider.jsx)
 
