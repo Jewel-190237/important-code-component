@@ -7,3 +7,5 @@
 * Common Slider is a hero or banner section slider.Here use animated button also.
 ![alt text](CommonSlider.jsx)
 
+![alt text](ThreeChangeSlider.png)
+
