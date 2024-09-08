@@ -13,3 +13,5 @@
 
 * Team file contain a swipper slider 
 ![alt text](SwipperSliderImage.png)
+* Tab 
+![alt text](Tab.png)
